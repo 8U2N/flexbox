@@ -2,9 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Flex Cards</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Source+Code+Pro:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: 0;
+            height: calc(100vh - 20px);
+            width: calc(100vw - 20px);
+            border: 10px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container > .img-blocks {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .img-blocks img {
+            margin: 5px;
+            height: 120px;
+            width: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hi Flexbox</h1>
+    <div class="container">
+        <div class="img-blocks">
+            <img src="https://source.unsplash.com/random/150x150" alt="image">
+            <img src="https://source.unsplash.com/random/150x150" alt="image">
+            <img src="https://source.unsplash.com/random/150x150" alt="image">
+            <img src="https://source.unsplash.com/random/150x150" alt="image">
+            <img src="https://source.unsplash.com/random/150x150" alt="image">
+            <img src="https://source.unsplash.com/random/150x150" alt="image">
+            <img src="https://source.unsplash.com/random/150x150" alt="image">
+            <img src="https://source.unsplash.com/random/150x150" alt="image">
+        </div>
+    </div>
 </body>
 </html>
